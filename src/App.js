@@ -1,17 +1,17 @@
 import "./App.css";
 import styled from "@emotion/styled";
 import { useState } from "react";
+import CornerTl from "./corner-tl.png";
 
 const theme1 = "#EAD2AC";
-const theme2 = "#07090F";
-const theme3 = "#F82F2F";
+const theme2 = theme1;
+const theme3 = theme1;
 
 const Wrapper = styled.div`
-  background: ${theme1};
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem 0;
+  padding: 2rem 0 1rem 0;
   color: ${theme2};
 `;
 
@@ -23,6 +23,7 @@ const Header = styled.h1`
   color: ${theme2};
   margin-bottom: 0;
   text-align: center;
+  font-size: 56px;
   margin: 0 1rem;
 `;
 
@@ -38,7 +39,7 @@ const CenterWrapper = styled.h1`
     font-size: 1.2rem;
     padding: 0.75rem;
     border-radius: 8px;
-    min-width: 300px;
+    min-width: 400px;
   }
 `;
 
@@ -51,13 +52,16 @@ const FlexWrapper = styled.div`
 
 const Container = styled.ul`
   margin: 1rem auto;
+  margin-left: 1rem;
   max-height: 315px;
   min-width: 300px;
   max-width: 300px;
   padding: 0.5rem;
   font-family: "Lato", sans-serif;
-  border: 1px solid ${theme3};
+  border: 2px solid #de9b72;
   border-radius: 16px;
+  position: relative;
+  padding: 1.25rem;
 `;
 const ListValue = styled.li`
   display: flex;
@@ -222,13 +226,29 @@ function App() {
         <input
           value={search}
           onChange={(event) => setSearch(event.target.value)}
-          placeholder={"Search your name here"}
+          placeholder={"Search your name here to find your seating"}
         />
       </CenterWrapper>
       <FlexWrapper>
         {finalTable &&
           finalTable.map((table) => (
             <Container>
+              <img
+                class="corner-decoration corner-left-top"
+                src={CornerTl}
+              ></img>
+              <img
+                class="corner-decoration corner-right-top"
+                src={CornerTl}
+              ></img>
+              <img
+                class="corner-decoration corner-right-bottom"
+                src={CornerTl}
+              ></img>
+              <img
+                class="corner-decoration corner-left-bottom"
+                src={CornerTl}
+              ></img>
               <HeaderForList>{table.name}</HeaderForList>
               {table.people &&
                 table.people.map((person) => <ListValue>{person}</ListValue>)}
