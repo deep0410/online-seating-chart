@@ -197,7 +197,7 @@ function App() {
     if (!search) return true;
     let personExistsInTable = false;
     table.people.forEach((person) => {
-      if (person.includes(search)) {
+      if (person.toLowerCase().includes(search.toLowerCase())) {
         personExistsInTable = true;
       }
     });
@@ -208,7 +208,9 @@ function App() {
     return {
       name: table.name,
       people: search
-        ? table.people.filter((person) => person.includes(search))
+        ? table.people.filter((person) =>
+            person.toLowerCase().includes(search.toLowerCase())
+          )
         : table.people,
     };
   });
