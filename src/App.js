@@ -2,8 +2,17 @@ import "./App.css";
 import styled from "@emotion/styled";
 import { useState } from "react";
 
+const theme1 = "#EAD2AC";
+const theme2 = "#07090F";
+const theme3 = "#F82F2F";
+
 const Wrapper = styled.div`
-  background: white;
+  background: ${theme1};
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  color: ${theme2};
 `;
 
 const Header = styled.h1`
@@ -11,6 +20,10 @@ const Header = styled.h1`
   align-items: center;
   justify-content: center;
   font-family: "Marck Script", cursive;
+  color: ${theme2};
+  margin-bottom: 0;
+  text-align: center;
+  margin: 0 1rem;
 `;
 
 const CenterWrapper = styled.h1`
@@ -18,6 +31,15 @@ const CenterWrapper = styled.h1`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  input {
+    height: 32px;
+    font-family: "Lato", sans-serif;
+    border: 1px solid ${theme3};
+    font-size: 1.2rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    min-width: 300px;
+  }
 `;
 
 const FlexWrapper = styled.div`
@@ -28,14 +50,14 @@ const FlexWrapper = styled.div`
 `;
 
 const Container = styled.ul`
-  margin: 1rem 2rem;
+  margin: 1rem auto;
   max-height: 315px;
-  min-height: 315px;
-  min-width: 150px;
-  max-width: 150px;
-  padding: 0;
+  min-width: 300px;
+  max-width: 300px;
+  padding: 0.5rem;
   font-family: "Lato", sans-serif;
-  border: 1px solid;
+  border: 1px solid ${theme3};
+  border-radius: 16px;
 `;
 const ListValue = styled.li`
   display: flex;
@@ -50,7 +72,7 @@ const HeaderForList = styled.li`
   margin-bottom: 0.5rem;
   justify-content: center;
   font-weight: bold;
-  margin-top: 0.5rem;
+  font-size: 1.1em;
 `;
 
 function App() {
