@@ -39,7 +39,8 @@ const CenterWrapper = styled.h1`
     font-size: 1.2rem;
     padding: 0.75rem;
     border-radius: 8px;
-    min-width: 400px;
+    width: 400px;
+    margin: 0 1rem;
   }
 `;
 
