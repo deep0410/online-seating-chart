@@ -323,10 +323,8 @@ function App() {
       people: [
         "Jignesh Patel (3)",
         "Reena Patel",
-        "Umang Patel",
+        "Umang Patel & family (3)",
         "Shitalben Patel",
-        "umang son 1",
-        "umang son 2",
         "Sanjaykumar and family (2)",
       ],
     },
