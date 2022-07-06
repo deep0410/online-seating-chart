@@ -19,7 +19,7 @@ const Header = styled.h1`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Marck Script", cursive;
+  font-family: "Rouge Script", cursive;
   color: ${theme2};
   margin-bottom: 0;
   text-align: center;
@@ -33,10 +33,10 @@ const CenterWrapper = styled.h1`
   justify-content: center;
   flex-wrap: wrap;
   input {
-    height: 32px;
+    height: 24px;
     font-family: "Lato", sans-serif;
     border: 1px solid ${theme3};
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.75rem;
     border-radius: 8px;
     width: 400px;

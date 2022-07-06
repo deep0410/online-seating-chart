@@ -59,14 +59,14 @@ code {
 /* Decorations */
 .corner-decoration {
   position: absolute;
-  width: 3em;
   margin: -3px;
   background-image: url("./Bg6.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 4px;
   background-position-x: 2px;
-  
+  height: 65px;
+  width: 65px !important;
 }
 
 @media (min-width: 768px) {
