@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/online-seating-chart/static/css/main.b25ceef5.css",
-    "main.js": "/online-seating-chart/static/js/main.32a70879.js",
+    "main.js": "/online-seating-chart/static/js/main.444e768b.js",
     "static/js/787.28cb0dcd.chunk.js": "/online-seating-chart/static/js/787.28cb0dcd.chunk.js",
     "static/media/Bg4.jpg": "/online-seating-chart/static/media/Bg4.c1409ab33959ec5e5b06.jpg",
     "static/media/corner-tl.png": "/online-seating-chart/static/media/corner-tl.e81087f02e8cf0f47a52.png",
     "static/media/Bg6.png": "/online-seating-chart/static/media/Bg6.5465db9bc10374de2a16.png",
     "index.html": "/online-seating-chart/index.html",
     "main.b25ceef5.css.map": "/online-seating-chart/static/css/main.b25ceef5.css.map",
-    "main.32a70879.js.map": "/online-seating-chart/static/js/main.32a70879.js.map",
+    "main.444e768b.js.map": "/online-seating-chart/static/js/main.444e768b.js.map",
     "787.28cb0dcd.chunk.js.map": "/online-seating-chart/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b25ceef5.css",
-    "static/js/main.32a70879.js"
+    "static/js/main.444e768b.js"
   ]
 }
