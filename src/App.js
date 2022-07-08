@@ -245,7 +245,7 @@ function App() {
       name: "Table 21",
       people: [
         "Suresh Bhambi (3)",
-        "Tarun (2)",
+        "Tarun",
         "Pankaj (2)",
         "Absar (2)",
         "Urvashi",
@@ -262,7 +262,6 @@ function App() {
         "Ashmi",
         "Isha Patel (Nilesh)",
         "Mansi Pandya",
-        "Yesha Patel",
         "Harsh Patel",
       ],
     },
@@ -275,6 +274,7 @@ function App() {
         "Purvish",
         "Nishil",
         "Kena",
+        "Tarun",
         "Jay (2)",
       ],
     },
@@ -359,8 +359,6 @@ function App() {
         "Yesha (3)",
         "Deep Patel",
         "Rajvi Patel",
-        "**** Arushi Loomba (2)",
-        "**** Aanchal Saxena",
       ],
     },
     {
