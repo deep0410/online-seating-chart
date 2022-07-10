@@ -377,7 +377,7 @@ function App() {
 
   return (
     <Wrapper>
-      <Header>Welcome to Deep and Keerti's wedding</Header>
+      <Header>Welcome to Deep and Keerti's Reception</Header>
       <CenterWrapper>
         <input
           value={search}
