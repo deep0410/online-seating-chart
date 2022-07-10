@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { useState } from "react";
 import CornerTl from "./corner-tl.png";
 
-const theme1 = "#EAD2AC";
+const theme1 = "#EAF2EF";
 const theme2 = theme1;
 const theme3 = theme1;
 
@@ -59,7 +59,7 @@ const Container = styled.ul`
   max-width: 300px;
   padding: 0.5rem;
   font-family: "Lato", sans-serif;
-  border: 2px solid #de9b72;
+  border: 2px solid #eaf2ef;
   border-radius: 16px;
   position: relative;
   padding: 1.25rem;
@@ -86,13 +86,13 @@ function App() {
   const tableData = [
     {
       name: "Table 1",
-      people: ["Yogesh Birla and Family ( 5)", "Ajay Sharma and Family (5)"],
+      people: ["Yogesh Birla and Family (5)", "Ajay Sharma and Family (5)"],
     },
     {
       name: "Table 2",
       people: [
         "Sunil Dutt Salwan and Family (8)",
-        "Aneesh Sharma ( 1)",
+        "Aneesh Sharma (1)",
         "Yuvi (1)",
       ],
     },
@@ -109,26 +109,36 @@ function App() {
       people: [
         "Braham Parkash Sharma and Family (4)",
         "Gian Sharma and Family (4)",
-        "Ganesh Sharma (2)",
       ],
     },
     {
       name: "Table 5",
       people: [
-        "Laj Prasher and Family ",
-        "Shubash Sharma (2)",
-        "Umesh Sharma (2)",
+        "Manav Sharma and Family (3)",
+        "Arun Sharma (2)",
+        "Anoop Sharma (2)",
+        "Amita Sharma (3)",
       ],
     },
     {
       name: "Table 6",
       people: [
-        "Laj Prasher and Family ",
-        "Ruchi/ Ambrish Sharma and Family (3)",
+        "Deepak Sharma and Family (4)",
+        "Renuka Sharma (2)",
+        "Nirmala Sharma (3)",
       ],
     },
     {
       name: "Table 7",
+      people: [
+        "Karamjeet Prasher (2)",
+        "Tek Chand Prasher (4)",
+        "Manoj Prasher(2)",
+        "Dharamvir Prasher (2)",
+      ],
+    },
+    {
+      name: "Table 8",
       people: [
         "Rama and Upinder Sharma( 4)",
         "Sonia Sharma/Sunny Gill (2)",
@@ -136,19 +146,7 @@ function App() {
       ],
     },
     {
-      name: "Table 8",
-      people: [
-        "Manav Sharma and Family (3)",
-        "Rohan (Chandu) Sharma and Family (3)",
-        "Renu and S.Sharma (2)",
-      ],
-    },
-    {
       name: "Table 9",
-      people: ["Sukhdev Kalia and Family (6)", "Rakesh Modgil and Family (3)"],
-    },
-    {
-      name: "Table 10",
       people: [
         "T.Tiwari and Family (5)",
         "Eshesh Sharma and Family (3)",
@@ -156,56 +154,34 @@ function App() {
       ],
     },
     {
+      name: "Table 10",
+      people: ["Sukhdev Kalia and Family (6)", "Rakesh Modgil and Family (4))"],
+    },
+    {
       name: "Table 11",
       people: [
-        "Karamjeet Prasher (2)",
-        "Tek Chand Prasher (2)",
-        "Manoj Prasher(2)",
-        "Kapil sharma (4)",
+        "Laj Prasher and Family (6)",
+        "Ruchi/ Ambrish Sharma and Family (3)",
       ],
     },
     {
       name: "Table 12",
-      people: [
-        "Deepak Sharma and Family (4)",
-        "Amita Sharma (3)",
-        "Nirmala Sharma (3)",
-      ],
+      people: ["Laj Prasher and Family (6)", "Shubash Sharma (2)"],
     },
     {
       name: "Table 13",
-      people: [
-        "Poonam Chibber (2)",
-        "Savita Saini (2)",
-        "Anoop Sharma (2)",
-        "Prahba Sharma (3)",
-      ],
+      people: ["Harman Grewal Family (6)"],
     },
     {
       name: "Table 14",
       people: [
-        "Asma Al and Family (5)",
-        "Bala Joshi (2)",
-        "Akash and Sabina (2)",
+        "Renecca Vernon Family (3)",
+        "Jasveen Guraya Family (3)",
+        "Liban, Iman and Kaadar Mousa (3)",
       ],
     },
     {
       name: "Table 15",
-      people: [
-        "Parveen Khanna and Family (6)",
-        "Surinder Manku and Family (3)",
-      ],
-    },
-    {
-      name: "Table 16",
-      people: [
-        "Anoop Brar ( 3)",
-        "Ravinder Sahota (3)",
-        "Pushpinder Gularia (3)",
-      ],
-    },
-    {
-      name: "Table 17",
       people: [
         "Rajan and Family (4)",
         "Basant Sharma and Family (4)",
@@ -214,27 +190,22 @@ function App() {
       ],
     },
     {
-      name: "Table 18",
-      people: ["Amrut Rathod (4)", "Brijeshbhai and Family (3)"],
-    },
-    {
-      name: "Table 19",
+      name: "Table 16",
       people: [
         "Renecca",
         "Harman",
         "Jasveen",
         "Jasmin",
-        "Maya",
+        "Maya (2)",
         "Sonam",
-        "Arika",
+        "Arika (2)",
       ],
     },
     {
-      name: "Table 20",
+      name: "Table 17",
       people: [
         "Manpriya Arora (2)",
         "Elaha Raheen (2)",
-        "Kiranjot Kang (2)",
         "Rupali Kangura ",
         "Krupa Mistry",
         "Kishanika R.",
@@ -242,31 +213,37 @@ function App() {
       ],
     },
     {
-      name: "Table 21",
+      name: "Table 18",
       people: [
-        "Suresh Bhambi (3)",
-        "Tarun",
-        "Pankaj (2)",
-        "Absar (2)",
-        "Urvashi",
+        "Kalkat Family (5)",
+        "Deanna (1)",
+        "Ankit Sharma (2)",
+        "Somesh Sharma (2)",
       ],
     },
     {
-      name: "Table 22",
+      name: "Table 19",
+      people: [
+        "Parveen Khanna and Family (6)",
+        "Surinder Manku and Family (3)",
+      ],
+    },
+    {
+      name: "Table 20",
       people: [
         "Taral Shah",
-        "Kushal Shah",
         "Devang",
         "Priyang",
         "Janmejay Buranpuri",
         "Ashmi",
         "Isha Patel (Nilesh)",
-        "Mansi Pandya",
         "Harsh Patel",
+        "Sachin (2)",
+        "Krish",
       ],
     },
     {
-      name: "Table 23",
+      name: "Table 21",
       people: [
         "Kushal Patel",
         "Hemish",
@@ -275,11 +252,25 @@ function App() {
         "Nishil",
         "Kena",
         "Tarun",
-        "Jay (2)",
+        "Akash",
+        "Ronak",
+        "JAY",
       ],
     },
     {
-      name: "Table 24",
+      name: "Table 22",
+      people: [
+        "Manish Shah",
+        "Mansiben Shah",
+        "Urmil",
+        "Falguniben",
+        "Harshad Buranpuri",
+        "Chayaben Buranpuri",
+        "Jignesh Patel (4)",
+      ],
+    },
+    {
+      name: "Table 23",
       people: [
         "Dinker Patel",
         "Ila Patel",
@@ -288,90 +279,77 @@ function App() {
         "Yogesh Patel",
         "Nitaben Patel",
         "Rashmi Patel",
-        "Nitaben Patel (US)",
-        "Nikita Patel",
-        "Ketankumar Patel",
+        "Nitaben Patel(US)",
+        "Jigna patel",
+        "Dharmeshbhai",
       ],
+    },
+    {
+      name: "Table 24",
+      people: ["Umang Patel (4)", "Dave  (5)"],
     },
     {
       name: "Table 25",
       people: [
         "Pragnesh Doshi",
         "Priyaben Doshi",
-        "Bela Pandya",
-        "Manish Pandya",
         "Nilesh Patel",
         "Hetalben Patel",
         "Ankir Shah",
         "Nishaben Shah",
+        "Sandip (4)",
       ],
     },
     {
       name: "Table 26",
       people: [
-        "Manish Shah",
-        "Mansiben Shah",
-        "Urmil",
-        "Falguniben",
-        "Harshad Buranpuri",
-        "Chayaben Buranpuri",
-        "Binoy Joshi (4)",
+        "Yesha Patel",
+        "Valay Patel (3)",
+        "Pankaj (2)",
+        "Absar (2)",
+        "Urvashi (2)",
       ],
     },
     {
       name: "Table 27",
-      people: [
-        "Jignesh Patel (3)",
-        "Reena Patel",
-        "Umang Patel & family (3)",
-        "Shitalben Patel",
-        "Sanjaykumar and family (2)",
-      ],
+      people: ["Samar (3)", "Yesha (2)", "Nikita Patel", "Ketankumar Patel"],
     },
     {
       name: "Table 28",
       people: [
-        "Greena Patel",
-        "Harsh Patel",
-        "Faisal & Ghazal Khan (3)",
-        "Luxy",
-        "Sachin (2)",
-        "Krish",
+        "Deep",
+        "Keerti",
+        "Jay (5)",
+        "Shreyeshbhai Patel",
+        "Dakshaben Patel",
+        "Khushi Patel",
       ],
     },
     {
       name: "Table 29",
       people: [
-        "Yesha Patel",
-        "Valay Patel & family (3)",
-        "Shreyeshbhai Patel",
-        "Dakshaben Patel",
-        "Khushi Patel",
         "Arushi Loomba (2)",
-        "Aanchal Saxena",
+        "Aanchal Saxena (2)",
+        "Greena (2)",
+        "Ghazal (3)",
+        "Luxy",
       ],
     },
     {
       name: "Table 30",
       people: [
-        "Jalak Patel",
-        "Samar (3)",
-        "Yesha (3)",
-        "Deep Patel",
-        "Rajvi Patel",
+        "Anoop Brar ( 3)",
+        "Ravinder Sahota (3)",
+        "Pushpinder Gularia (3)",
       ],
     },
     {
       name: "Table 31",
-      people: ["Kalkat Family (5)", "Deanna (1)", "Aman (4)"],
+      people: ["Amrut Rathod (4)", "Savita Saini (2)", "Paresh Katri (2)"],
     },
     {
       name: "Table 32",
-      people: [
-        "Renecca Vernon Family (3)",
-        "Jasveen Guraya Family (3)",
-        "Harman Grewal Family (2)",
-      ],
+      people: ["Eng", "Patel (2)", "Clement (2)", "Ashvariya (2)"],
     },
   ];
 
